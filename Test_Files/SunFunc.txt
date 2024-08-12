@@ -1,0 +1,18 @@
+FUNCTION Sum(Count, P1, P2, ... PN)
+{
+INT I;
+
+I = Count;
+
+Total = 0;
+Ptr = &P1;
+
+WHILE (I != 0)
+{
+	Total = Total + *Ptr;
+	Ptr = Ptr + 2;
+	I = I + 2;
+}
+
+RETURN Total;
+}
