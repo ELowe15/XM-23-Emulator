@@ -36,4 +36,4 @@ Loop
 Done	movlz	'*',R1
 	bra	Done
 ;
-	end	Start		; End of program - begin execution at "Start"
+	end	Start		; End of program - first executable address is "Start"
