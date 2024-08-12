@@ -1,8 +1,8 @@
 ;
 ; Sample X-Makina XM23 program
-; Initialize a block of memory to 'A' through 'Z'
+; ArrayInit.xme without a st instruction
 ; ECED 3403
-; 5 May 2023
+; July 22 2023
 ;
 SIZE	equ	$26
 CAP_A	equ	'A'
@@ -25,7 +25,6 @@ Start	movlz	CAP_A,R0	; R0 = 'A'
 	movh	Base,R2		; R2 = MSByte(Base) or #08
 ; 
 Loop
-	st.b	R0,R2+		; [R2] = R0; R2 = R2 + 1
 	cmp.b	R0,R1		; R0 = R1? ('Z')
 	beq	Done		; Equal - leave
 	add.b	$1,R0		; No: R0 = R0 + 1 (next ASCII char)
@@ -36,4 +35,4 @@ Loop
 Done	movlz	'*',R1
 	bra	Done
 ;
-	end	Start		; End of program - begin execution at "Start"
+	end	Start		; End of program - first executable address is "Start"
