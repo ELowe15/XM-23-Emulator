@@ -206,6 +206,10 @@ To run the program, you can directly execute the precompiled binary executable a
 ### Running the Executable
 The executable is named `XM23.exe`. The program's main function is also found in the `Emulator.C` file
 
+### Test Files
+Custom test files which can be loaded and run on the emulator can be found in the folder `test_files`. This 
+includes the assembly files and their respective assembled xml files.
+
 # Assembler
 
 This converts assembly code into XML format for further processing. It includes 
