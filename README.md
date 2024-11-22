@@ -5,7 +5,7 @@ The XM-23 Emulator emulates the hardware behavior of the 16-bit von Neumann XM-2
 to debug, analyze, and execute programs in a virtual environment. The emulator implements the cpu, bus,  8 16-bit registers, 64 kiB memory, a program status word, decoding and execution of 41 instructions, 3 cache organizations, exception handling and debugging tools.
 
 ### Macros
-Multiple header files including `Global.h`, `Exceptions.h, and `Cache.h` provide numerous macros to manipulate data efficiently. This includes bit extraction/setting/clearing, calculating addresses in the vector table and bit masks with keys to index into the cache tables.
+Multiple header files including `Global.h`, `Exceptions.h` and `Cache.h` provide numerous macros to manipulate data efficiently. This includes bit extraction/setting/clearing, calculating addresses in the vector table and bit masks with keys to index into the cache tables.
 
 ### Data Structures
 Unions and structs are used extensively throughout this program to easily access data as words, bytes, nibbles or 
